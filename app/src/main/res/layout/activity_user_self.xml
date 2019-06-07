@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".activity.UserSelfActivity">
+
+    <include layout="@layout/normal_title"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@drawable/back">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_touxiang" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="用户名"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#199B9B9B">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mima"
+            android:paddingTop="10dp"/>
+
+        <Button
+            android:id="@+id/bt_changepsd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="更改密码"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:background="#199B9B9B"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#199B9B9B">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tuichudenglu"
+            android:paddingTop="10dp"/>
+
+        <Button
+            android:id="@+id/bt_tui"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="退出登录"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:background="#199B9B9B"/>
+    </LinearLayout>
+
+</LinearLayout>

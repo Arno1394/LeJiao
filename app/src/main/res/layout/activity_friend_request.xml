@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.FriendRequestActivity">
+
+    <include layout="@layout/normal_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginLeft="6dp"
+            android:id="@+id/et_findfirend"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_bg"
+            android:hint="请输入想要添加的好友的乐交号"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_marginLeft="6dp"
+            android:id="@+id/bt_serchfriend"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/sousuo1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="以下这些人想添加您为好友："
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

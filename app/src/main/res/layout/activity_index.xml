@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_index_back"
+    tools:context=".activity.IndexActivity">
+
+
+    <include layout="@layout/index_title_layout"/>
+
+    <ImageButton
+        android:id="@+id/bt_shezhi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="#00000000"
+        android:src="@drawable/shezhi" />
+
+    <ImageButton
+        android:id="@+id/bt_lianxiren"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/bt_shezhi"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/index_bt_shape"
+        android:src="@drawable/lianxiren" />
+
+    <ImageButton
+        android:id="@+id/bt_tianjialianxiren"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/bt_shezhi"
+        android:layout_toLeftOf="@id/bt_shezhi"
+        android:src="@drawable/tianjialianxiren"
+        android:background="@drawable/index_bt_shape"/>
+
+    <ImageButton
+        android:id="@+id/bt_gerenzhongxin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/bt_shezhi"
+        android:layout_toRightOf="@id/bt_shezhi"
+        android:src="@drawable/gerenzhongxin"
+        android:background="@drawable/index_bt_shape"/>
+
+</RelativeLayout>

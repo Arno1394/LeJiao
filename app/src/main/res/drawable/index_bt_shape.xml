@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!--填充颜色-->
+    <solid android:color="#00000000"/>
+    <corners android:radius="100dip"/>
+    <padding
+        android:top="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:bottom="2dp"/>
+
+    <!--边框线的颜色-->
+    <stroke android:width="7dp"
+        android:color="@color/colorLike2"/>
+
+    <item > <!--mask 可以添加一些有趣的图像效果，会按照图像的轮廓来产生涟漪范围-->
+        <shape android:shape="oval">
+            <solid android:color="#8cc476"/> <!--默认背景色-->
+        </shape>
+    </item>
+</shape>
